@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetAgeing" targetNamespace="http://tempuri.org/DataSetAgeing.xsd" xmlns:mstns="http://tempuri.org/DataSetAgeing.xsd" xmlns="http://tempuri.org/DataSetAgeing.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Settings)" PropertyReference="ApplicationSettings.EwingInventory.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.Odbc" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        *
+FROM            ageingrpt</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Companyname" DataSetColumn="Companyname" />
+              <Mapping SourceColumn="current" DataSetColumn="current" />
+              <Mapping SourceColumn="a1_30" DataSetColumn="a1_30" />
+              <Mapping SourceColumn="a31_60" DataSetColumn="a31_60" />
+              <Mapping SourceColumn="a61_90" DataSetColumn="a61_90" />
+              <Mapping SourceColumn="a90g" DataSetColumn="a90g" />
+              <Mapping SourceColumn="total" DataSetColumn="total" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetAgeing" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetAgeing" msprop:Generator_UserDSName="DataSetAgeing">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Companyname" msprop:Generator_ColumnVarNameInTable="columnCompanyname" msprop:Generator_ColumnPropNameInRow="Companyname" msprop:Generator_ColumnPropNameInTable="CompanynameColumn" msprop:Generator_UserColumnName="Companyname">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="current" msprop:Generator_ColumnVarNameInTable="columncurrent" msprop:Generator_ColumnPropNameInRow="current" msprop:Generator_ColumnPropNameInTable="currentColumn" msprop:Generator_UserColumnName="current" type="xs:double" />
+              <xs:element name="a1_30" msprop:Generator_ColumnVarNameInTable="columna1_30" msprop:Generator_ColumnPropNameInRow="a1_30" msprop:Generator_ColumnPropNameInTable="a1_30Column" msprop:Generator_UserColumnName="a1_30" type="xs:double" />
+              <xs:element name="a31_60" msprop:Generator_ColumnVarNameInTable="columna31_60" msprop:Generator_ColumnPropNameInRow="a31_60" msprop:Generator_ColumnPropNameInTable="a31_60Column" msprop:Generator_UserColumnName="a31_60" type="xs:double" />
+              <xs:element name="a61_90" msprop:Generator_ColumnVarNameInTable="columna61_90" msprop:Generator_ColumnPropNameInRow="a61_90" msprop:Generator_ColumnPropNameInTable="a61_90Column" msprop:Generator_UserColumnName="a61_90" type="xs:double" />
+              <xs:element name="a90g" msprop:Generator_ColumnVarNameInTable="columna90g" msprop:Generator_ColumnPropNameInRow="a90g" msprop:Generator_ColumnPropNameInTable="a90gColumn" msprop:Generator_UserColumnName="a90g" type="xs:double" />
+              <xs:element name="total" msprop:Generator_ColumnVarNameInTable="columntotal" msprop:Generator_ColumnPropNameInRow="total" msprop:Generator_ColumnPropNameInTable="totalColumn" msprop:Generator_UserColumnName="total" type="xs:double" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
